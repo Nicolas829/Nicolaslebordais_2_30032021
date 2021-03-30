@@ -1,3 +1,37 @@
-h1 {
+
+@font-face {
+ font-family: "Raleway";
+ src: url("/fonts/Raleway-Black.ttf") format("Raleway-Black"),
+      url("/fonts/Raleway-BlackItalic.ttf") format("Raleway-BlackItalic"),
+      url("/fonts/Raleway-Regular.ttf") format("Raleway");
+}
+
+body, header{
+	font-family: "Raleway", Arial, serif;
+	text-decoration: none;
+}
+ header h1 .logo {
+
+	position: relative;
+	width:200px;
+	top:30px;
+	left:10px;
+}
+
+header h2 li {
+	position:relative;
+	margin-left: 50px;
+	left:1000;
+	top:-40px;
+	display:inline;
+		
+}
+header h2 li a {
+	font-size:20px;
+	text-decoration: none;
 	
+}
+
+h1 {
+	font-color:;
 }
