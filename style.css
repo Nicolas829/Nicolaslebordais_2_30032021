@@ -14,31 +14,34 @@ body, header{
 
 }
 
+body {
+margin-left:90px;
+
+}
 
 div.container {
 	width:100%;
-	
 	display:flex;
-
+	padding-bottom: 30px;
 }
 div.item {
 	
   width: 100%;
-  padding: 10px;
   
-  display:inline;
+    display:inline;
 
 }
 
  header div .logo {
- 	vertical-align: bottom;
+ 	
 	width:100px;
 	margin-top:100px;
-	margin-left:90px;
+
+	
 	
 }
 header div ul {
-	margin-left:300px;
+	margin-left:200px;
 	margin-top:100px;
 }
 
@@ -65,4 +68,51 @@ header div li a:hover {
 header div ul li .inscription  {
 
 	color:blue;
+}
+
+h1 {
+	font-size:25px;
+}
+
+h2 {
+	font-size:19px;
+	text-decoration: none;
+	font-weight:lighter;
+}
+
+h3  {
+
+
+	display:inline-flex;
+	
+}
+
+.search {
+	width:500px;
+	
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+	
+	
+}
+ 
+
+i{
+border:solid;
+background-color:grey;
+border-radius: 15px 0px 0 15px;
+height:50px;
+width:50px;
+}
+
+
+body h3 div .input {
+	border:solid;
+}
+body h3 div .rechercher {
+
+	border:solid;
+
 }
