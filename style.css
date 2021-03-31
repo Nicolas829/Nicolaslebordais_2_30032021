@@ -7,6 +7,9 @@
 
 }
 
+/* Les couleurs de la charte sont le bleu #0065FC, 
+et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
+
 body, header{
 	font-family: "Raleway", Arial, serif;
 	text-decoration: none;
@@ -58,7 +61,7 @@ header div li a {
 	
 }
 header div li a:hover {
-	color:blue;
+	color:#0065FC;
 	padding-top:50px;
 	text-decoration-line: underline;
 	text-underline-offset: -3.5em;
@@ -67,7 +70,7 @@ header div li a:hover {
 
 header div ul li .inscription  {
 
-	color:blue;
+	color:#0065FC;
 }
 
 h1 {
@@ -95,24 +98,41 @@ h3  {
 	justify-content: flex-start;
 	
 	
-	
 }
  
 
 i{
-border:solid;
-background-color:grey;
+
+background-color:#F2F2F2;
 border-radius: 15px 0px 0 15px;
-height:50px;
+height:40px;
 width:50px;
+
 }
 
+body div  .map {
 
-body h3 div .input {
-	border:solid;
+
 }
-body h3 div .rechercher {
 
-	border:solid;
+body  div  .rechercher {
 
+	
+	width:150px;
+	height:40px;
+	border-radius:0 15px 15px 0;
+	background-color:#0065FC;
+	color:white;
+
+}
+body div  p {
+	margin-top:12px;
+	margin-left: 25px;
+	
+	font-size:15px;
+}
+input
+{
+	height:40px;
+	width: 200px;
 }
