@@ -43,6 +43,7 @@ div.item {
 	
 }
 header div ul {
+	
 	margin-left:150px;
 	margin-top:100px;
 }
@@ -72,14 +73,20 @@ header div ul li .inscription  {
 	color:#0065FC;
 }
 
+header div .part2 {
+	
+}
+
 h1 {
 	font-size:20px;
+	
 }
 
 h2 {
 	font-size:17px;
 	text-decoration: none;
 	font-weight:lighter;
+	
 }
 
 
@@ -105,6 +112,7 @@ text-align:center;
 
 
 }
+
 i    {
 
 text-align: center;
@@ -125,7 +133,7 @@ input {
 
 
 
-body  div  .rechercher {
+div  .rechercher {
 
 	
 	width:130px;
@@ -135,9 +143,104 @@ body  div  .rechercher {
 	color:white;
 
 }
-body div  p {
+ div  p {
 	margin-top:12px;
 	margin-left: 25px;
 	
 	font-size:12px;
 }
+
+header div.theme {
+
+	
+	margin-top:30px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	
+	width:800px;
+	border-spacing:0px;
+}
+
+header div.element1 {
+	
+		font-size:12px;
+}
+
+header div.element2,.element3,.element4,.element5 {
+	
+	
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	border:solid;
+	width:auto;
+	padding-right:20px;
+	height:30px;
+	border-radius:20px 20px 20px 20px;
+	border-color: #F2F2F2;
+	
+	
+}
+
+header div .icons {
+	
+	border-radius:100%;
+	background-color: #DEEBFF;
+	color:#0065FC;
+	width:40px;
+	height:30px;
+	margin-left:-4px;
+	text-align:center;
+	font-size:12.5px;
+	vertical-align: bottom;
+	font-variant-position:center;
+	line-height:4px;
+	
+}
+
+	
+
+	div  p2 {
+		margin-top:12px;
+		margin-left: 20px;
+		font-size:12px;
+		text-align:center;
+		
+		
+	}
+
+header .info {
+
+	margin-top: 30px;
+	display:flex;
+	border:solid;
+	
+}
+
+header div .iconsinfo {
+	
+	border-radius:100%;
+	border:solid #F2F2F2;
+	background-color:white;
+	color:#0065FC;
+	width:20px;
+	height:20px;
+	text-align:center;
+	font-size:8.5px;
+	margin
+	
+}
+
+
+	div  .infotext {
+
+		margin-top: 7px;
+		margin-left:10px;
+		font-size:12px;
+		text-align:center;
+	
+		
+	}
+
+	
