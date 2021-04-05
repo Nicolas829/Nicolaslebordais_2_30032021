@@ -247,7 +247,7 @@ header div .iconsinfo {
 	}
 
 	body div .marseille {
-		border:solid;
+		
 		margin-top: 30px;
 		display:flex;
 		justify-content: space-between;
@@ -265,7 +265,7 @@ header div .iconsinfo {
 		border-radius:15px 15px 15px 15px;
 		flex-direction: column;
 		align-items:space-between;
-		height:750px;
+		height:730px;
 		width:1100px;
 		background-color:#F2F2F2;
 	
@@ -370,13 +370,12 @@ body div .box2 {
 
 	display:flex;
 	flex-direction:column;
-	justify-content: space-between;
+	justify-content: flex-start;
+	gap:30px;
 	background-color: #F2F2F2;
 	border-radius:15px 15px 15px 15px;
-	
-	border:solid;
 	width:550px;
-	height:750px;
+	height:730px;
  }
 
 
@@ -386,7 +385,7 @@ body div .box2text {
 	justify-content: space-between;
 	align-items:none;
 	
-	
+	margin-bottom:-20px;
 	margin-right:50px;
 }
 
@@ -396,23 +395,26 @@ body div .box2text {
 	font-size:25px;
  }
 
-body div .soleil {
-
-	display:flex;
-	flex-direction: row;
-}
-
  body div .pict2 {
 
+	margin-top: 10px;
 	display:flex;	
 	flex-direction: row;
 	margin-top: 15px;
-	border:solid;
+	
 	margin-left:45px;
 	width:450px;
 	height:170px;
 	border-radius: 15px 15px 15px 15px;
 	background-color: white;
+	
+	
+}
+body div .soleil {
+
+	
+	display:flex;
+	flex-direction: row;
 	
 }
 
@@ -433,16 +435,13 @@ body div .textpict2 {
 
 	margin-left:20px;
 	margin-top: 20px;
-	border:solid;
+	
 	margin-right:45px;
 	line-height:25px;
 }
 
 body div p1 {
 
-		
-		
-		border:solid;
 		font-size:19px;
 		font-weight:bold;
 
@@ -467,7 +466,7 @@ body div .greystars {
 
 body div .starspict2  {
 
-	margin-top:50px;
+	margin-top:30px;
 	display:flex;
 	justify-self: flex-start;
 	
