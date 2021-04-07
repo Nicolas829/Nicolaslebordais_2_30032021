@@ -125,13 +125,6 @@ text-align:center;
 
 }
 
-span  {
-
-text-align: center;
-font-size:15px;
-
-}
-
 input {
 
 	height:36px;
@@ -237,6 +230,7 @@ header .info {
 }
 
 header div .iconsinfo {
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -247,10 +241,8 @@ header div .iconsinfo {
 	width:20px;
 	height:20px;
 	text-align:center;
-	
 	font-size:8.5px;
-	
-	
+		
 }
 
 
@@ -270,9 +262,11 @@ header div .iconsinfo {
 		display:flex;
 		justify-content: space-between;
 		flex-direction:row;
+		
 		height:750px;
-		gap:10px;
+		gap:30px;
 		margin-bottom: 20px;
+		
 		
 		
 	}
@@ -285,8 +279,9 @@ header div .iconsinfo {
 		flex-direction: column;
 		
 		height:730px;
-		width:1100px;
+		width:1150px;
 		background-color:#F2F2F2;
+		
 	
 	
 
@@ -305,7 +300,13 @@ header div .iconsinfo {
 		font-weight: bold;
 		height:30px;
 	}
-	
+
+	body div .plus {
+
+		
+		margin-left:45px;
+		font-size:19px;
+	}
 
 	body div .resp1 {
 
@@ -350,21 +351,31 @@ header div .iconsinfo {
 		background-color: white;
 		line-height:2px;
 		gap:0px;
+		
 	}
 
 	body div .photopict1 {
 
 		
 		display: flex;
-		align-items:center;
+		
 		border-radius:15px 15px 0 0;
 		width:310px;
 		height:160px;
+		
+		overflow: hidden;
 		
 			
 		  
 	}
 
+	body div .amina {
+
+		width:100%;
+		height:140%;
+
+
+	}
 	body div .hoteltext {
 
 		font-weight:bold;
@@ -396,6 +407,7 @@ body div .box2 {
 	border-radius:15px 15px 15px 15px;
 	width:550px;
 	height:730px;
+	
  }
 
 
@@ -446,7 +458,8 @@ body div .photopict2 {
 	width:200px;
 	height:165px;
 	margin-left:1.5px;
-	margin-top:1.5px;
+	margin-top:1px;
+	
 	
 	
 	  
@@ -539,11 +552,17 @@ body div .act1lib {
 	
 
 }
+body div .act1pict1 {
+
+	height:450px;
+	overflow: hidden;
+	
+}
 
 body div .vieuxport {
 
-	width:380px;
-	height:450px;
+	width:160%;
+	height:120%;
 		
 }
 
@@ -574,16 +593,30 @@ body div .act2inf {
 	border-radius:15px;
 }
 
+body div .act2pict1 {
+
+	height:230px;
+	overflow: hidden;
+	
+}
+
+
 body div .pomegues {
 
 	width:380px;
-	height: 230px;
+	height: 140%;
+}
+body div .act2pict2 {
+
+	height:130px;
+	overflow: hidden;
+	border-radius:15px 15px 0 0;
 }
 
 body div .frioul {
 
 	width:380px;
-	height:130px;
+	height:145%;
 	border-radius:15px 15px 0 0;
 }
 
@@ -604,11 +637,18 @@ body div .act1lib {
 	
 
 }
+body div .act3pict1 {
+
+	height:450px;
+	overflow: hidden;
+	border-radius:15px 15px 0 0;
+}
 
 body div .calanques {
 
-	width:380px;
-	height:450px;
+	width:135%;
+	height:110%;
+	
 	border-radius:15px 15px 0 0;
 		
 }
@@ -628,6 +668,7 @@ body div .act4sup {
 	height:220px;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:15px;
+	overflow: hidden;
 
 }
 
@@ -637,19 +678,33 @@ body div .act4inf {
 	height:230px;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:15px;
+	overflow: hidden;
+}
+
+body div .act4pict1 {
+
+	height:170px;
+	overflow: hidden;
 }
 
 body div .notredame {
 
-	width:380px;
-	height: 170px;
+	width:100%;
+	height:140%;
 	border-radius:15px 15px 0 0;
+}
+
+body div .act4pict2 {
+
+	height:180px;
+	overflow: hidden;
 }
 
 body div .longchamp {
 
-	width:380px;
-	height:180px;
+	width:100%;
+	height:140%;
+	
 	border-radius:15px 15px 0 0;
 }
 
