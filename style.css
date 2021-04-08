@@ -47,10 +47,15 @@ footer{
 	margin-right: -50px;
 }
 
+/*création de box plutôt que de liste car plus facilement maniable pour 
+ajuster aux différents écrans*/
+
 div.container {
 	width:100%;
 	display:flex;
+	justify-content: space-between;
 	padding-bottom:30px;
+	border:solid;
 }
 div.item {
 	
@@ -67,40 +72,110 @@ div.item {
 	
 	
 }
-header div ul {
+header div .liste {
 	display:flex;
-	justify-content:flex-end;
-	
-	
+	justify-content:space-between;
+	align-items: baseline;
+	gap:35px;
 	margin-top:100px;
+	width:auto;
+	
 }
 
-header div ul li {
+
+header div .li1,.li2 {
+	width:150px;
 	
-	margin-right: 70px;
 	
-	display:inline;
-		
+	text-align:center;
+	
 }
-header div li a {
+
+
+header div .li3 {
+	
+	width:100px;
+	text-align:right;
+}
+
+header div .li3 a {
+	color:#0065FC;
+}
+
+
+header div a {
 	font-size:17px;
 	text-decoration: none;
 	color:black;
 	
 }
-header div li a:hover {
+header div .li1 a:hover,.li2 a:hover {
 	color:#0065FC;
 	padding-top:50px;
-	
 	border-top:solid 1px;
-	
+
 }
 
-header div ul li .inscription  {
+/*ajustement de l'entete sur screen smartphone*/
 
-	color:#0065FC;
+@media only screen and (max-width: 600px) {
+
+	body {
+
+		margin-right:25px;
+		margin-left:25px;
+		margin-top:-50px;
+
+	}
+
+	div .liste {
+		display:flex;
+		justify-self: flex-end;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 90px;
+		align-items: none;
+		border:solid;
+		width:150px;
+		
+		
+	}
+	div .liste1er {
+
+
+	}
+
+	div .li1{
+
+		order:2;
+		margin-left:-100px;
+		border-bottom:solid #F2F2F2;
+		text-align:center;
+		
+	}
+	div .li2{
+
+		order:3;
+		
+		border-bottom:solid #F2F2F2;
+		text-align:center;
+		
+		width: 190px;
+		border:solid;
+
+		
+	}
+	div .li3 {
+		
+		order:-1;
+		flex: 1 0 100%;
+		margin-top: 15px;
+	}
+
 }
 
+
+/*media queries termine premier part*/
 
 
 h1 {
