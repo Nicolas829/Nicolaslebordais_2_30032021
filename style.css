@@ -16,24 +16,6 @@ body, header{
 	
 
 }
-/* Set the background color of body to tan */
-body {
-	background-color: tan;
-  }
-  
-  /* On screens that are 992px or less, set the background color to blue */
-  @media screen and (max-width: 992px) {
-	body {
-	  background-color: blue;
-	}
-  }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-	body {
-	  background-color: olive;
-	}
-  }
 
 body {
 margin-left:80px;
@@ -55,7 +37,7 @@ div.container {
 	display:flex;
 	justify-content: space-between;
 	padding-bottom:30px;
-	border:solid;
+	
 }
 div.item {
 	
@@ -78,7 +60,7 @@ header div .liste {
 	align-items: baseline;
 	gap:35px;
 	margin-top:100px;
-	width:auto;
+	
 	
 }
 
@@ -109,11 +91,14 @@ header div a {
 	color:black;
 	
 }
-header div .li1 a:hover,.li2 a:hover {
+
+@media screen and (min-width: 900px) {
+header div .li1 :hover,.li2 :hover {
 	color:#0065FC;
 	padding-top:50px;
 	border-top:solid 1px;
 
+}
 }
 
 /*ajustement de l'entete sur screen smartphone*/
@@ -127,50 +112,59 @@ header div .li1 a:hover,.li2 a:hover {
 		margin-top:-50px;
 
 	}
+	
 
 	div .liste {
-		display:flex;
-		justify-self: flex-end;
-		flex-direction: row;
+		
 		flex-wrap: wrap;
-		margin-top: 90px;
-		align-items: none;
-		border:solid;
-		width:150px;
+		row-gap: 2px;
 		
 		
 	}
-	div .liste1er {
-
-
-	}
-
+	
 	div .li1{
 
 		order:2;
-		margin-left:-100px;
+		margin-left: -180px;
+		width:140px;
 		border-bottom:solid #F2F2F2;
-		text-align:center;
+		padding-bottom: 10px;
+		
+		
 		
 	}
 	div .li2{
 
 		order:3;
-		
 		border-bottom:solid #F2F2F2;
-		text-align:center;
+		flex-shrink: 0;
+		flex-grow: 2;
+		width:140px;
+		padding-bottom: 10px;
 		
-		width: 190px;
-		border:solid;
-
 		
+					
 	}
+
 	div .li3 {
 		
 		order:-1;
 		flex: 1 0 100%;
 		margin-top: 15px;
 	}
+	header div .li1:hover, .li2:hover {
+		border-bottom:solid #0065FC;
+		border-top:none;
+		color #0065FC;
+	
+	}
+
+	header div a:hover{
+
+		color:#0065FC;
+	}
+
+
 
 }
 
@@ -199,6 +193,8 @@ h2 {
 	justify-content: flex-start;
 	padding:10px 0 0 0;	
 	
+	
+	
 }
  
 
@@ -211,8 +207,6 @@ border-radius: 15px 0px 0 15px;
 height: 40px;
 line-height:40px;
 width:50px;
-
-
 text-align:center;
 
 
@@ -221,7 +215,7 @@ text-align:center;
 input {
 
 	height:36px;
-	width: auto;
+	width: 240px;
 	border:none;
 	border-top: solid#F2F2F2 1px;
 	border-bottom:solid #F2F2F2 1px;
@@ -242,12 +236,43 @@ div  .rechercher {
 
 }
 
+
+
  div  p {
 	margin-top:10px;
 	margin-left: 35px;
 	
 	font-size:19px;
 }
+
+/*ajustement de la barre de recherche pour smartphone*/
+
+@media only screen and (max-width: 600px) {
+	
+	div .rechercher p {
+
+		font-size:0px;
+	}
+
+	div .rechercher {
+
+		width:50px;
+	   
+	   border-radius:15px 15px 15px 15px;
+
+
+	}
+div .rechercher i {
+
+	font-size:15px;
+	margin-left:-15px;
+	margin-top: 3px;
+	
+}
+
+}
+
+/*fin d'ajustement de la barre de recherche */
 
 header div.theme {
 
@@ -258,6 +283,7 @@ header div.theme {
 	align-items:center;
 	gap:10px;
 	width:1150px;
+	
 	
 }
 
@@ -312,6 +338,26 @@ header div .icons {
 		text-align:center;
 		
 		
+	}
+/*ajustement des thèmes pour smartphone */
+
+	@media only screen and (max-width: 600px) {
+
+		header div.theme {
+			width:auto;
+			flex-wrap:wrap;
+			border:solid;
+		}
+		header div.element1 {
+			order:-1;
+			flex:1 0 100%;
+	}
+	header div.element2,.element3,.element4,.element5 {
+
+		padding-right:1px;
+		
+	}
+
 	}
 
 header .info {
