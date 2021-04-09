@@ -18,8 +18,8 @@ body, header{
 }
 
 body {
-margin-left:80px;
-margin-right:80px;
+margin-left:40px;
+margin-right:40px;
 
 }
 
@@ -38,6 +38,8 @@ div.container {
 	justify-content: space-between;
 	padding-bottom:30px;
 	
+	align-items: center;
+	
 }
 div.item {
 	
@@ -49,35 +51,29 @@ div.item {
  header div .logo {
  	
 	width:100px;
-	margin-top:100px;
-
-	
+	margin-top:50px;
 	
 }
 header div .liste {
 	display:flex;
 	justify-content:space-between;
 	align-items: baseline;
+	margin-top:40px;
 	gap:35px;
-	margin-top:100px;
-	
-	
-}
+		}
 
 
 header div .li1,.li2 {
 	width:150px;
-	
-	
 	text-align:center;
-	
+	align-items:center;
 }
-
 
 header div .li3 {
 	
 	width:100px;
 	text-align:right;
+	line-height: ;
 }
 
 header div .li3 a {
@@ -95,8 +91,8 @@ header div a {
 @media screen and (min-width: 900px) {
 header div .li1 :hover,.li2 :hover {
 	color:#0065FC;
-	padding-top:50px;
-	border-top:solid 1px;
+	padding-top:60px;
+	border-top:solid 2px;
 
 }
 }
@@ -173,12 +169,14 @@ header div .li1 :hover,.li2 :hover {
 
 
 h1 {
-	font-size:20px;
+	margin-top:0px;
+	font-size:29px;
+	
 	
 }
 
 h2 {
-	font-size:15px;
+	font-size:21px;
 	text-decoration: none;
 	font-weight:lighter;
 	
@@ -187,7 +185,7 @@ h2 {
 
 
 .search {
-	width:500px;
+	width:600px;
 	height: 40px;
 	display:flex;
 	justify-content: flex-start;
@@ -204,18 +202,20 @@ body div  .map {
 
 background-color:#F2F2F2;
 border-radius: 15px 0px 0 15px;
-height: 40px;
-line-height:40px;
+height: 50px;
+line-height:50px;
 width:50px;
 text-align:center;
+cursor:pointer;
 
 
 }
 
 input {
 
-	height:36px;
-	width: 240px;
+	height:46px;
+	width:310px;
+	
 	border:none;
 	border-top: solid#F2F2F2 1px;
 	border-bottom:solid #F2F2F2 1px;
@@ -228,21 +228,29 @@ input {
 div  .rechercher {
 
 	
-	width:200px;
-	height:40px;
+	width:158px;
+	height:50px;
 	border-radius:0 15px 15px 0;
 	background-color:#0065FC;
 	color:white;
+	cursor:pointer;
+	
 
 }
 
 
 
  div  p {
-	margin-top:10px;
-	margin-left: 35px;
+	margin-top:12px;
+	margin-left: 25px;
 	
+	font-size:21px;
+}
+
+.champ {
+
 	font-size:19px;
+	font-weight: bold;
 }
 
 /*ajustement de la barre de recherche pour smartphone*/
@@ -264,7 +272,7 @@ div  .rechercher {
 	}
 div .rechercher i {
 
-	font-size:15px;
+	font-size:19px;
 	margin-left:-15px;
 	margin-top: 3px;
 	
@@ -277,19 +285,21 @@ div .rechercher i {
 header div.theme {
 
 	
-	margin-top:30px;
+	margin-top:50px;
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
-	gap:10px;
-	width:1150px;
+	
+	width:1250px;
+	
+	height:50px;
 	
 	
 }
 
 header div.element1 {
 	
-		font-size:19px;
+		font-size:22px;
 }
 
 header div.element2,.element3,.element4,.element5 {
@@ -300,10 +310,12 @@ header div.element2,.element3,.element4,.element5 {
 	align-items:center;
 	border:solid;
 	width:auto;
-	padding-right:20px;
-	height:30px;
-	border-radius:20px 20px 20px 20px;
+	padding-right:30px;
+	gap:20px;
+	height:50px;
+	border-radius:25px 25px 25px 25px;
 	border-color: #F2F2F2;
+	cursor:pointer;
 	
 	
 }
@@ -313,11 +325,11 @@ header div .icons {
 	border-radius:100%;
 	background-color: #DEEBFF;
 	color:#0065FC;
-	width:40px;
-	height:30px;
+	width:50px;
+	height:50px;
 	margin-left:-4px;
 	text-align:center;
-	font-size:12px;
+	font-size:14px;
 	vertical-align: bottom;
 	line-height:4px;
 	display: flex;
@@ -334,11 +346,19 @@ header div .icons {
 		
 		margin-left: 15px;
 		margin-right:15px;
-		font-size:19px;
+		font-size:22px;
 		text-align:center;
 		
 		
 	}
+
+	header div.element2:hover,.element3:hover,.element4:hover,.element5:hover {
+
+		background-color:#DEEBFF;
+	}
+
+
+	]
 /*ajustement des thèmes pour smartphone */
 
 	@media only screen and (max-width: 400px) {
@@ -390,19 +410,19 @@ header div .iconsinfo {
 	border:solid #F2F2F2;
 	
 	color:#0065FC;
-	width:20px;
-	height:20px;
+	width:30px;
+	height:30px;
 	text-align:center;
-	font-size:8.5px;
+	font-size:10px;
 		
 }
 
 
 	div  .infotext {
 
-		margin-top:3px;
+		margin-top:5px;
 		margin-left:10px;
-		font-size:19px;
+		font-size:22px;
 		text-align:left;
 	
 		
@@ -445,69 +465,33 @@ header div .iconsinfo {
 		
 		margin-top: 30px;
 		display:flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		flex-direction:row;
 		
-		height:750px;
-		gap:30px;
+		width: auto;
+		
+		height:auto;
+		gap:50px;
 		margin-bottom: 20px;
 		
 		
 		
+		
 	}
-
-	@media only screen and (max-width: 600px)  {
-
-		
-		body div .marseille {
-		
-			display:flex;
-			flex-direction:column;
-			align-items: flex-start;
-			height:auto;
-			width:auto;
-			align-items: center;
-			margin:none;
-			gap:30px;
-	}
-		body div .textresult {
-
-			font-size:23px
-		}
-
-		body div .box1 {
-
-			
-			order:
-			width:auto;
-			flex-direction: column;
-			background-color:#F2F2F2;
-		
-			margin:none;
-			gap:30px;
-		}
-
-
-
-
-
 
 	
-}
-
-	/*fin ajustement box résultat */
-
-	@media only screen and (min-width: 600px)  {
 	body div .box1 {
 
-		
+		order:0;
 		display:flex;
-		border-radius:15px 15px 15px 15px;
+		border-radius:20px;
 		flex-direction: column;
-		
-		height:730px;
-		width:1150px;
+		flex-grow: 4;
+		height:auto;
+		min-width:auto;
 		background-color:#F2F2F2;
+		gap:30px;
+		
 		
 	}
 	
@@ -522,28 +506,32 @@ header div .iconsinfo {
 		margin-bottom:0px;
 		font-size:27px;
 		font-weight: bold;
-		height:30px;
+		height:40px;
 	}
+	
 
 	body div .plus {
 
 		
 		margin-left:45px;
-		font-size:19px;
+		font-size:20px;
+		font-weight: bold;
+		height: auto;
+		margin-top:15px;
+		margin-bottom:30px;
+		cursor: pointer;
 	}
 
 	body div .resp1 {
 
 		
 		display:flex;
-		justify-content: center;
-		vertical-align: top;
-		margin-left:25px;
-		margin-right:25px;
+		justify-content: space-evenly;
 		
-		height:300px;
+		width:auto;
+		height:auto;
 		align-items: center;
-		gap:35px;
+		
 		
 
 	}
@@ -551,33 +539,35 @@ header div .iconsinfo {
 
 		
 		display:flex;
-		justify-content: center;
-		vertical-align: top;
-		margin-left:25px;
-		margin-right:25px;
-		
-		height:300px;
+		justify-content: space-evenly;
+		width:auto;
+		height:auto;
 		align-items: center;
-		gap:35px;
 		
-
 	}
+
+
 	
 	body div .pict1 {
 
 		margin-top:0px;
 		display:flex;
 		flex-direction:row;
-		justify-content: center;
-		align-items:center;
+		
 		box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
-			
-		width:320px;
-		height:250px;
-		border-radius: 15px 15px 15px 15px;
+		width:auto;
+		height:auto;
+		border-radius: 20px;
 		background-color: white;
 		line-height:2px;
-		gap:0px;
+		
+		cursor: pointer;
+		
+	}
+
+	body div .pict1:hover {
+
+		box-shadow:0px 0px 10px 8px rgba(222,235,255,1) ;
 		
 	}
 
@@ -585,22 +575,30 @@ header div .iconsinfo {
 
 		
 		display: flex;
-		
-		border-radius:15px 15px 0 0;
-		width:310px;
-		height:160px;
-		
+		border-radius:20px 20px 0 0;
+		width:340px;
+		height:180px;
+		object-fit: cover;
 		overflow: hidden;
 		
-			
 		  
 	}
+	body div .mer,.panier,.mouette,.port,.cannebiere,.amina {
 
-	body div .amina {
+		margin-left: 2px;
+	margin-right: 2px;
+	margin-top:2px;
+	
+	
+	}
 
-		width:100%;
-		height:140%;
-
+	body div .aminaphoto {
+		border-radius:20px 20px 0 0;
+		
+		width:340px;
+		height:180px;
+		object-fit: cover;
+	
 
 	}
 	body div .hoteltext {
@@ -629,11 +627,15 @@ body div .box2 {
 	display:flex;
 	flex-direction:column;
 	justify-content: flex-start;
-	gap:30px;
-	background-color: #F2F2F2;
-	border-radius:15px 15px 15px 15px;
+	height:auto;
 	width:550px;
-	height:730px;
+	background-color: #F2F2F2;
+	border-radius:20px ;
+	flex-grow:0;
+	box-sizing: border-box;
+	
+	
+	
 	
  }
 
@@ -642,202 +644,8 @@ body div .box2text {
 
 	display:flex;
 	justify-content: space-between;
-	
-	margin-bottom:-20px;
-	margin-right:50px;
-	
-}
-
- body div .fleche {
-
-	Margin-top:18px;
-	font-size:25px;
- }
-
- body div .pict2 {
-
-	margin-top: 10px;
-	display:flex;	
-	flex-direction: row;
-	margin-top: 15px;
-	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
-	margin-left:45px;
-	width:450px;
-	height:170px;
-	border-radius: 15px 15px 15px 15px;
-	background-color: white;
-	
-	
-	
-}
-body div .soleil {
-
-	
-	display:flex;
-	flex-direction: row;
-	
-}
-
-body div .photopict2 {
-
-	
-	border-radius:15px 0 0 15px;
-	width:200px;
-	height:165px;
-	margin-left:1.5px;
-	margin-top:1px;
-	
-	
-	
-	  
-}
-body div .hoteltextbox2 {
-
-	font-weight:bold;
-	margin-top:20px;
-	
-	font-size:19px;
-	margin-bottom:5px;
-
-}
-
-
-body div .pricetextbox2 {
-
-
-font-size:17px;
-}
-
-body div .textpict2 {
-	margin-left:30px;
-	margin-right:20px;
-	
-}
-
-
-
-
- body div .stars  {
-
-	display:flex;
-	justify-self: flex-start;
-	margin-left:20px;
-	margin-top:10px;
 	margin-bottom:10px;
-	color:#0065FC;
 	
-	
-	
-}
-
-body div .greystars {
-
-	color:#F2F2F2;
-}
-
-
-body div .starspict2  {
-
-	margin-top:50px;
-	display:flex;
-	justify-self: flex-start;
-	
-	color:#0065FC;
-	
-	
-}
-
-body div .greystarspict2 {
-
-	color:#F2F2F2;
-}
-	}
-
-/*fin ajustement box résultat */
-
-
-	
-	body div .pict1 {
-
-		margin-top:0px;
-		display:flex;
-		flex-direction:row;
-		justify-content: center;
-		align-items:center;
-		box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
-			
-		width:320px;
-		height:250px;
-		border-radius: 15px 15px 15px 15px;
-		background-color: white;
-		line-height:2px;
-		gap:0px;
-		
-	}
-
-	body div .photopict1 {
-
-		
-		display: flex;
-		
-		border-radius:15px 15px 0 0;
-		width:310px;
-		height:160px;
-		
-		overflow: hidden;
-		
-			
-		  
-	}
-
-	body div .amina {
-
-		width:100%;
-		height:140%;
-
-
-	}
-	body div .hoteltext {
-
-		font-weight:bold;
-		margin-top:20px;
-		margin-left: 20px;
-		font-size:19px;
-		margin-bottom:20px;
-
-	}
-
-
-body div .pricetext {
-
-	margin-top:10px;
-	margin-left: 20px;
-	font-size:17px;
-}
-
-	
-
-	
-body div .box2 {
-
-	display:flex;
-	flex-direction:column;
-	justify-content: flex-start;
-	gap:30px;
-	background-color: #F2F2F2;
-	border-radius:15px 15px 15px 15px;
-	width:550px;
-	height:730px;
-	
- }
-
-
-body div .box2text {
-
-	display:flex;
-	justify-content: space-between;
-	
-	margin-bottom:-20px;
 	margin-right:50px;
 	
 }
@@ -850,36 +658,47 @@ body div .box2text {
 
  body div .pict2 {
 
-	margin-top: 10px;
+	margin-top: 20px;
 	display:flex;	
 	flex-direction: row;
-	margin-top: 15px;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
-	margin-left:45px;
-	width:450px;
-	height:170px;
-	border-radius: 15px 15px 15px 15px;
+	width:auto;
+	border-radius: 20px;
 	background-color: white;
-	
-	
+	margin-bottom:35px;
+	margin-left:40px;
+	margin-right:40px;
+	cursor: pointer;
 	
 }
-body div .soleil {
+
+body div .pict2:hover {
+
+	box-shadow:0px 0px 10px 8px rgba(222,235,255,1) ;
+	
+}
+body div .cadrepict2 {
 
 	
 	display:flex;
 	flex-direction: row;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	margin-top:2px;
 	
 }
 
 body div .photopict2 {
 
 	
-	border-radius:15px 0 0 15px;
-	width:200px;
+	border-radius:20px 0 0 20px;
+	width:210px;
 	height:165px;
-	margin-left:1.5px;
-	margin-top:1px;
+	
+	object-fit: cover;
+	
+	
+	
 	
 	
 	
@@ -946,7 +765,7 @@ body div .greystarspict2 {
 	color:#F2F2F2;
 }
 
-	}
+	
 
 body div .actbox {
 
