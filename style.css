@@ -4,7 +4,7 @@
  src: url("/fonts/Raleway-Black.ttf") format("Raleway-Black"),
       url("/fonts/Raleway-BlackItalic.ttf") format("Raleway-BlackItalic"),
       url("/fonts/Raleway-Regular.ttf") format("Raleway");
-
+	
 }
 
 /* Les couleurs de la charte sont le bleu #0065FC, 
@@ -41,42 +41,53 @@ footer{
 	}
 }
 
+@media only screen and (max-width: 480px) {
 
+	body {
+
+		margin-left:0;
+		margin-right:0;
+		
+		font-size:0.8em;
+
+	}
+}
 
 
 /*création de box plutôt que de liste car plus facilement maniable pour 
 ajuster aux différents écrans*/
 
 div.container {
-	width:100%;
+	margin-top:3.12em;
 	display:flex;
 	justify-content: space-between;
-	padding-bottom:1.875em;
 	
 	align-items: center;
+	margin-bottom:2em;
 	
 }
-div.item {
-	
-  width: 100%;
-  display:inline;
 
-}
 
  header div .logo {
  	
-	width:6.25em;
-	margin-top:3.12em;
+	width:8.25em;
+	
 	
 }
 header div .liste {
 	display:flex;
 	justify-content:space-between;
-	align-items: baseline;
-	margin-top:2.5em;
+	
 	gap:2em;
+	
 		}
 
+header div .li1_li2_480px {
+
+	display: flex;
+	justify-content: space-between;
+	gap:2em;
+}
 
 header div .li1,.li2 {
 	width:9.375em;
@@ -88,7 +99,7 @@ header div .li3 {
 	
 	width:6.25em;
 	text-align:right;
-	line-height: ;
+	
 }
 
 header div .li3 a {
@@ -114,44 +125,62 @@ header div .li1 :hover,.li2 :hover {
 
 /*ajustement de l'entete sur screen smartphone*/
 
-@media only screen and (max-width: 600px) {
-
-	body {
-
-		margin-right:1.56em;
-		margin-left:1.56em;
-		margin-top:-2.12em;
-
+@media only screen and (max-width: 480px) {
+	div.container {
+		
+		display:flex;
+		
+		margin-top:none;
+		
+		align-items: center;
+		
 	}
-	
 
-	div .liste {
-		
+
+	header div .liste {
+	
+		display:flex;
+		justify-content: flex-end;
 		flex-wrap: wrap;
-		row-gap: 0.125em;
+		line-height: 3em;
+		position:absolute;
+		
+		margin-right:0em;
+		margin-top:5em;
 		
 		
+		
+	/*ajout d'une division pour center les deux éléments "hebergement" et "activités" 
+	utilisation du flex wrap, flex grow et box-sizing */
+		
+		
+	}
+	header div .li1_li2_480px {
+		
+			
+		display: flex;
+		justify-content: space-around;
+		
+		box-sizing:content-box;
+		width:100%;
+		gap:0em;
+		
+		
+			
 	}
 	
 	div .li1{
-
-		order:2;
-		margin-left:-11.25em;
-		width:8.75em;
+		
 		border-bottom:solid #F2F2F2;
-		padding-bottom: 10px;
-		
-		
-		
+		flex-grow: 1;
+				
 	}
 	div .li2{
-
-		order:3;
+		
+		
 		border-bottom:solid #F2F2F2;
-		flex-shrink: 0;
-		flex-grow: 2;
-		width:140px;
-		padding-bottom: 10px;
+		flex-grow: 1;
+		padding-right:3em;
 		
 		
 					
@@ -161,16 +190,19 @@ header div .li1 :hover,.li2 :hover {
 		
 		order:-1;
 		flex: 1 0 100%;
-		margin-top: 15px;
+		margin-right:2em;
+		
+		
+		
 	}
-	header div .li1:hover, .li2:hover {
+	header div .li1:active, .li2:active {
 		border-bottom:solid #0065FC;
 		border-top:none;
-		color #0065FC;
+		color: #0065FC;
 	
 	}
 
-	header div a:hover{
+	header div a:active{
 
 		color:#0065FC;
 	}
@@ -180,7 +212,7 @@ header div .li1 :hover,.li2 :hover {
 }
 
 
-/*media queries termine premier part*/
+/*fin ajustement portable entete et liste*/
 
 
 h1 {
@@ -190,6 +222,23 @@ h1 {
 	
 }
 
+@media screen and (max-width:480px) {
+
+	h1 {
+
+		margin-top:4em;
+		margin-left:0.5em;
+	
+	}
+
+	h2 {
+		font-size:1.31em;
+		text-decoration: none;
+		font-weight:lighter;
+		margin-left:0.7em;
+}
+}
+
 h2 {
 	font-size:1.31em;
 	text-decoration: none;
@@ -197,103 +246,150 @@ h2 {
 	
 }
 
+/*partie sur la barre de recherche, décomposé en box placé sous la division "search*/
 
-
-.search {
-	width:37.5em;
-	height: 2.5em;
+  .search {
+	
 	display:flex;
-	justify-content: flex-start;
-	padding:0.625em 0 0 0;	
+	justify-content: space-between;
+	width:31.5em;
+	height: 3.6em;
 	
 	
+		
 	
 }
- 
-
 
 
 body div  .map {
-
+	box-sizing: border-box;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 background-color:#F2F2F2;
-border-radius: 1em 0px 0 1em;
-height: 3.125em;
-line-height:3.125em;
-width:3.125em;
-text-align:center;
+border-radius: 1.25em 0px 0 1.25em;
+vertical-align: middle;
+width:3.2em;
 cursor:pointer;
-
-
 }
+
+
+
 
 input {
 
-	height:2.375em;
-	width:19.375em;
-	
+	box-sizing: border-box;
+	height:100%;
+	width:22.375em;
 	border:none;
 	border-top: solid#F2F2F2 0.07em;
 	border-bottom:solid #F2F2F2 0.07em;
-	border-collapse:collapse;
+	outline: none;
 	
+		
 }
 
 
 
 div  .rechercher {
 
-	
-	width: 9.875em;
-	height:3.125em;
+	box-sizing: border-box;
+	height:100%;
+	width: 10em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius:0 1em 1em 0;
 	background-color:#0065FC;
 	color:white;
 	cursor:pointer;
 	
-
 }
-
-
 
  div  p {
-	margin-top:0.75em;
-	margin-left: 1.56em;
 	
-	font-size:1.31em;
+	
+	font-size:1.4em;
 }
 
-.champ {
+  .rechercher i{
+	font-size:0em;
+}
 
-	font-size:1.18em;
+#ville::placeholder {
+
+	
+	font-size:1.4em;
+	color:black;
 	font-weight: bold;
 }
 
 /*ajustement de la barre de recherche pour smartphone*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+
+div .search {
+
+	margin-top:3em;
+	display: flex;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	width:95%;
+	margin-left:1em;
+	margin-right:1em;
+	gap:0;
 	
-	div .rechercher p {
-
-		font-size:0px;
-	}
-
-	div .rechercher {
-
-		width:50px;
-	   
-	   border-radius:15px 15px 15px 15px;
-
-
-	}
-div .rechercher i {
-
-	font-size:19px;
-	margin-left:-15px;
-	margin-top: 3px;
 	
 }
 
+div .rechercher {
+	box-sizing: border-box;
+	width:15%;
+	border-radius:1.25em;
 }
+div .input {
+	box-sizing: border-box;
+	width:72%;
+}
+
+input {
+	
+	box-sizing: border-box;
+	height:100%;
+	width:100%;
+	border-top: solid #F2F2F2 0.07em;
+	border-bottom:solid #F2F2F2 0.07em;
+	outline: none;
+	
+}
+
+.rechercher {
+
+	margin-left:-0.5em;
+	font-size:
+}
+
+.rechercher p {
+	font-size: 0em;
+}
+
+
+#icone_search {
+	font-size: 1em;
+}
+.rechercher p i{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	text-align:center;
+	font-size:1em;
+	
+}
+
+
+}
+	
 
 /*fin d'ajustement de la barre de recherche */
 
@@ -307,14 +403,15 @@ header div.theme {
 	
 	width:78.125em;
 	
-	height:3.125em;
+	height:3.2em;
+	
 	
 	
 }
 
 header div.element1 {
 	
-		font-size:1.375em;
+		font-size:1.4em;
 }
 
 header div.element2,.element3,.element4,.element5 {
@@ -327,7 +424,8 @@ header div.element2,.element3,.element4,.element5 {
 	width:auto;
 	padding-right:2em;
 	gap:1.25em;
-	height:3.125em;
+	box-sizing:content-box;
+	height:100%;
 	border-radius:1.56em;
 	border-color: #F2F2F2;
 	cursor:pointer;
@@ -340,8 +438,9 @@ header div .icons {
 	border-radius:100%;
 	background-color: #DEEBFF;
 	color:#0065FC;
-	width:3.125em;
-	height:3.125em;
+	width:3.2em;
+	
+	height:3.2em;
 	margin-left:-0.22em;
 	text-align:center;
 	
@@ -359,9 +458,9 @@ header div .icons {
 	div  .themetext {
 
 		
-		margin-left: 1em;
-		margin-right:1em;
-		font-size:1.375em;
+		margin-left: 0.5em;
+		margin-right:0.5em;
+		font-size:1.4em;
 		text-align:center;
 		
 		
@@ -375,19 +474,25 @@ header div .icons {
 	}
 
 
-	]
+	
 /*ajustement des thèmes pour smartphone */
 
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 480px) {
 
-		header div.theme {
-			width:auto;
+	header	 div .theme {
+			display:flex;
+			justify-content:flex-start ;
+			margin-left:1em;
 			flex-wrap:wrap;
+			width:auto;
+			height:auto;
+			gap:1em;
 			
 		}
 		header div.element1 {
 			order:-1;
 			flex:1 0 100%;
+			
 	}
 
 		header div .element3 {
@@ -398,14 +503,45 @@ header div .icons {
 		}
 	header div.element2,.element3,.element4,.element5 {
 
-		padding-right:0px;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	border:solid;
+	width:auto;
+	padding-right:0.5em;
+	padding-left:-1em;
+	gap:0.5em;
+	box-sizing:content-box;
+	height:100%;
+	border-radius:1.56em;
+	border-color: #F2F2F2;
+	cursor:pointer;
 		
+			
+	}
+	header div.element2:hover,.element3:hover,.element4:hover,.element5:hover {
+
+		background-color:white;
+		border-color:#F2F2F2;
 		
 	}
+
+	header div.element2:active,.element3:active,.element4:active,.element5:active {
+
+		
+			background-color:#DEEBFF;
+			border-color:#DEEBFF;
+			
+	
+		
+	}
+
 
 	}
 
 	/*fin ajustement des thèmes */
+
+
 
 
 header .info {
@@ -446,12 +582,24 @@ header div .iconsinfo {
 	}
 /*ajustement bulle info*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+
+	header .info {
+
+		margin-top: 3em;
+		display:flex;
+		justify-content: flex-start;
+		margin-left:1em;
+		
+		
+		
+	}
+
 
 	div  .infotext {
 
 		
-		font-size:16px;
+		font-size:1.4em;
 		text-align:left;
 	
 		
@@ -476,26 +624,20 @@ header div .iconsinfo {
 
 /*fin ajustement bulle info */
 
-
+/*********************************** partie sur box résultat et images ******************/
 
 	body div .marseille {
 		
 		margin-top: 1em;
 		display:flex;
-		justify-content: flex-start;
-		flex-direction:row;
-		
+		justify-content:space-between;
 		height:auto;
-		gap:3.025em;
 		margin-bottom: 1.325em;
-		
-
-		
 		
 		
 	}
 
-	
+		
 	body div .box1 {
 
 		
@@ -505,6 +647,8 @@ header div .iconsinfo {
 		background-color:#F2F2F2;
 		gap:1.875em;
 		
+		padding-right:1em;
+		padding-left:1em;
 		
 	}
 	
@@ -787,6 +931,125 @@ body div .greystarspict2 {
 	color:#F2F2F2;
 }
 
+/******************partie smartphone box résultat et populaires********************/
+
+
+
+/****** partie populaire ****/
+@media screen and (max-width:480px) {
+
+	body div .marseille {
+	
+		margin-top: 3em;
+		display:flex;
+		flex-direction:column;
+		gap:2em;
+	}
+
+	body div .box1 {
+		order:2;
+		display:flex;
+		flex-direction: column;
+		width:auto;
+		background:none;
+	}
+
+
+	body div .resp1 {
+
+		display: flex;
+		flex-direction: column;
+		margin-left:0em;
+		margin-right:0em;
+		
+	}
+
+	body div .resp2 {
+
+		display:flex;
+		flex-direction: column;
+		margin-left:0em;
+		margin-right:0em;
+	}
+
+	body div .pict1 {
+		box-sizing:content-box;
+		width:100%;
+		
+				
+	}
+
+	body div.textresult {
+
+		margin-left:0.5em;
+	}
+	
+
+	body div .photopict1 {
+
+		box-sizing: border-box;
+		width:100%;
+	}
+	body div .aminaphoto {
+
+		box-sizing:border-box;
+		border-radius:1.25em 1.25em 0 0;
+		
+		width:100%;
+		
+		object-fit: cover;
+	
+
+	}
+
+	body div .hoteltext {
+		margin-top:1.5em;
+		
+	}
+
+	body div .pricetext {
+		margin-top:1.5em;
+	}
+
+	body div .stars {
+		margin-top:1.5em;
+	}
+
+	body div .box2 {
+
+		border-radius:0em;
+		width:auto;
+		margin-left:0.8em;
+		margin-right:0.8em;
+		gap:0em;
+		margin-bottom:0em;
+		
+	}
+	body div .pict2 {
+
+		box-sizing: content-box;
+		margin-left:0.5em;	
+		margin-right:0.5em;	
+		
+		margin-bottom:1em;
+		
+	}
+
+	body div .box2text {
+
+		margin-left:0.5em;
+		margin-right:0em;
+	}
+	body div .fleche {
+
+		margin-right:0.5em;
+	}
+
+}
+
+
+/***************fin partie ajustement smartphone pour résulat et populaires ****/
+
 	
 
 body div .actbox {
@@ -796,16 +1059,19 @@ body div .actbox {
 	height:auto;
 	display:flex;
 	justify-content: space-between;
-	gap:1.875em;
+	gap:0;
 	margin-top:1.25em;
+	
 }
+
+
 
 body div .act1 {
 
 	display:flex;
 	flex-direction: column;
-	width: 23.75em;
-	height: 31.25em;
+	width: 25.75em;
+	height: 33.25em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:1.25em;
 	cursor: pointer;
@@ -813,7 +1079,7 @@ body div .act1 {
 
 body div .act1pict1 {
 
-	height:28.125em;
+	height:30.125em;
 	overflow: hidden;
 	
 }
@@ -821,6 +1087,7 @@ body div .act1pict1 {
 body div .vieuxport {
 
 	object-fit: cover;
+	height:30.125em;
 	border-radius:1.25em 1.25em 0 0;
 }
 
@@ -830,14 +1097,14 @@ body div .act2 {
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 23.75em;
-	height: 31.25em;
+	width: 25.75em;
+	height: 33.25em;
 	
 }
 
 body div .act2sup {
-	width:23.75em;
-	height:17.5em;
+	width:25.75em;
+	height:18.5em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:1.25em;
 	cursor: pointer;
@@ -845,15 +1112,15 @@ body div .act2sup {
 
 body div .act2inf {
 
-	width:23.75em;
-	height:11.25em;
+	width:25.75em;
+	height:12.25em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:1.25em;
 }
 
 body div .act2pict1 {
 
-	height:14.375em;
+	height:15.375em;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -868,7 +1135,7 @@ body div .pomegues {
 }
 body div .act2pict2 {
 
-	height:8.125em;
+	height:9.125em;
 	overflow: hidden;
 	border-radius:1.25em 1.25em 0 0;
 	cursor: pointer;
@@ -886,8 +1153,8 @@ body div .act3 {
 
 	display:flex;
 	flex-direction: column;
-	width: 23.75em;
-	height: 31.25em;
+	width: 25.75em;
+	height: 33.25em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:1.25em;
 	cursor: pointer;
@@ -902,7 +1169,7 @@ body div .act1lib {
 }
 body div .act3pict1 {
 
-	height:28.125em;
+	height:30.125em;
 	overflow: hidden;
 	border-radius:1.25em 1.25em 0 0;
 	
@@ -911,7 +1178,7 @@ body div .act3pict1 {
 body div .calanques {
 
 	object-fit: cover;
-	height:28.125em;
+	height:30.125em;
 	border-radius:1.25em 1.25em 0 0;
 		
 }
@@ -921,14 +1188,14 @@ body div .act4 {
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 23.75em;
-	height: 31.25em;
+	width: 25.75em;
+	height: 33.25em;
 	
 }
 
 body div .act4sup {
-	width:23.75em;
-	height:13.75em;
+	width:25.75em;
+	height:14.75em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:1.25em;
 	overflow: hidden;
@@ -938,8 +1205,8 @@ body div .act4sup {
 
 body div .act4inf {
 
-	width:23.75em;
-	height:14.375em;
+	width:25.75em;
+	height:15.375em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:1.25em;
 	overflow: hidden;
@@ -948,7 +1215,7 @@ body div .act4inf {
 
 body div .act4pict1 {
 
-	height:10.62em;
+	height:11.62em;
 	overflow: hidden;
 }
 
@@ -960,7 +1227,7 @@ body div .notredame {
 
 body div .act4pict2 {
 
-	height:11.25em;
+	height:12.25em;
 	overflow: hidden;
 }
 
@@ -980,6 +1247,74 @@ body .acttext {
 	font-weight: bold;
 	
 }
+
+/****************ajustement activités smartphone************/
+
+@media screen and (max-width:480px) {
+
+	body .acttext {
+
+		margin-left:0.5em;
+	}
+
+	body div .actbox {
+
+		flex-direction:column;
+		border:solid;
+		margin-left:0.5em;
+		margin-right:0.5em;
+		gap:1em;
+	}
+
+	body div .act1,.act3{
+
+		
+		
+		box-sizing: content-box;
+		width:100%;
+		border:solid;
+		gap:0em;
+		height:18em;
+		
+		
+		
+	}
+	body div .act1lib {
+
+		margin-top:1.5em;
+		margin-left:2em;
+		font-weight:bold;
+		
+	
+	}
+
+	body div .act1pict1 {
+
+		height:14em;
+	}
+
+	body div .vieuxport {
+		box-sizing: border-box;
+		width:100%;
+		height:100%;
+	}
+
+	body div .act2sup {
+		
+		box-sizing: content-box;
+		width:100%;
+		border:solid;
+	}
+
+	body div .pomegues {
+
+		box-sizing: content-box;
+		width:100%;
+	}
+
+}
+
+
 
 
 
