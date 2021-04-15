@@ -151,27 +151,30 @@ header div .li1 :hover,.li2 :hover {
 	
 		display:flex;
 		justify-content: flex-end;
+		
+		
 		flex-wrap: wrap;
 		line-height: 3em;
 		position:absolute;
-		
+	
 		margin-right:0em;
+		margin-left:0em;
 		margin-top:5em;
 		
 		
-		
+	}	
 	/*ajout d'une division pour center les deux éléments "hebergement" et "activités" 
 	utilisation du flex wrap, flex grow et box-sizing */
 		
 		
-	}
+	
 	header div .li1_li2_480px {
 		
 			
 		display: flex;
 		justify-content: space-around;
+		align-items:center;
 		
-		box-sizing:content-box;
 		width:100%;
 		gap:0em;
 		
@@ -183,6 +186,7 @@ header div .li1 :hover,.li2 :hover {
 		
 		border-bottom:solid #F2F2F2;
 		flex-grow: 1;
+		padding-left:1.6em;
 				
 	}
 	div .li2{
@@ -190,7 +194,8 @@ header div .li1 :hover,.li2 :hover {
 		
 		border-bottom:solid #F2F2F2;
 		flex-grow: 1;
-		padding-right:3em;
+		
+		padding-right:1.6em;
 		
 		
 					
@@ -1021,6 +1026,7 @@ body div .greystarspict2 {
 
 	body div .hoteltext {
 		margin-top:1.5em;
+	
 		
 	}
 
@@ -1041,19 +1047,25 @@ body div .greystarspict2 {
 		gap:0em;
 		margin-bottom:0em;
 		
+		
 	}
+	
 	body div .pict2 {
 
-		box-sizing: content-box;
 		margin-left:0.5em;	
 		margin-right:0.5em;	
 		
 		margin-bottom:1em;
 		
 	}
+	body div .hoteltextbox2 {
+		
+	
+	}
 
 	body div .box2text {
-
+		
+		
 		margin-left:0.5em;
 		margin-right:0em;
 	}
