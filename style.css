@@ -23,6 +23,16 @@ margin-right:2.5em;
 
 }
 
+a {
+
+	text-decoration: none;
+	color:black;
+}
+
+div a p {
+	color:white;
+}
+
 footer{
 
 	margin-top:2em;
@@ -982,8 +992,15 @@ body div .greystarspict2 {
 	body div.textresult {
 
 		margin-left:0.5em;
+		margin-top:2em;
 	}
-	
+	body div .plus {
+
+		
+		margin-left:0.5em;
+		
+	}
+
 
 	body div .photopict1 {
 
@@ -1076,6 +1093,7 @@ body div .act1 {
 	border-radius:1.25em;
 	cursor: pointer;
 }
+
 
 body div .act1pict1 {
 
@@ -1247,6 +1265,11 @@ body .acttext {
 	font-weight: bold;
 	
 }
+body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.act4inf:hover {
+
+	box-shadow:0px 0px 10px 8px rgba(222,235,255,1) ;
+	
+}
 
 /****************ajustement activités smartphone************/
 
@@ -1260,19 +1283,19 @@ body .acttext {
 	body div .actbox {
 
 		flex-direction:column;
-		border:solid;
+		
 		margin-left:0.5em;
 		margin-right:0.5em;
 		gap:1em;
 	}
 
-	body div .act1,.act3{
+	body div .act1{
 
 		
 		
 		box-sizing: content-box;
 		width:100%;
-		border:solid;
+		
 		gap:0em;
 		height:18em;
 		
@@ -1293,26 +1316,116 @@ body .acttext {
 		height:14em;
 	}
 
+	body div .act2pict1 {
+
+		height:14em;
+	}
+	body div .act2pict2 {
+
+		height:14em;
+	}
+	body div .act3pict1 {
+
+		height:14em;
+	}
+	body div .act4pict1 {
+
+		height:14em;
+	}
+	body div .act4pict2 {
+
+		height:14em;
+	}
+
+
 	body div .vieuxport {
 		box-sizing: border-box;
 		width:100%;
 		height:100%;
 	}
 
-	body div .act2sup {
+	body div .act2{
+
+		
 		
 		box-sizing: content-box;
 		width:100%;
-		border:solid;
+		
+		gap:0em;
+		height:37em;
+		
+		
+		
 	}
 
-	body div .pomegues {
+	body div .act2sup {
+		
+		box-sizing: border-box;
+		width:100%;
+		
+		height:18em;
 
+	}
+
+	body div .act2inf {
+		
+		box-sizing: border-box;
+		width:100%;
+		
+		height:18em;
+
+	}
+	body div .act3 {
+		
+		box-sizing: border-box;
+		width:100%;
+		
+		height:18em;
+
+	}
+	body div .act4{
+
+		
+		
 		box-sizing: content-box;
 		width:100%;
+		
+		gap:0em;
+		height:37em;
+		
+		
+		
+	}
+	
+	
+	body div .act4inf {
+		
+		box-sizing: border-box;
+		width:100%;
+		
+		height:18em;
+
+	}body div .act4sup {
+		
+		box-sizing: border-box;
+		width:100%;
+		
+		height:18em;
+
+	}
+
+	body div .act1:active,.act2sup:active,.act2inf:active,.act3:active,.act4sup:active,.act4inf:active {
+
+		box-shadow:0px 0px 10px 8px rgba(222,235,255,1) ;
+		
 	}
 
 }
+
+
+/********fin ajustement section activité***************************/
+
+
 
 
 
@@ -1352,4 +1465,24 @@ footer .titresfooter {
 	font-size:1em;
 	font-weight: bold;
 	line-height:3.75em;
+}
+
+
+/***********ajustement footer******************/
+
+@media screen and (max-width:480px) {
+
+	body div .cadre {
+
+		
+		
+		display: flex;
+		flex-direction: column;
+		height:auto;
+		margin-right:2.5em;
+		margin-left:2.2em;
+		
+	}
+
+	
 }
