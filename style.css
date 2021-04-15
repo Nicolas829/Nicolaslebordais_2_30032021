@@ -1052,6 +1052,16 @@ body div .fleches {
 
 }
 
+/**********ajustement ecran tablette landscape******************/
+
+@media screen and (max-width:1180px) {
+
+	body .marseille {
+	font-size:0.95em;
+}
+}
+
+
 /**************fin ajustement ecran tablette *****************/
 
 /******************partie smartphone box résultat et populaires********************/
