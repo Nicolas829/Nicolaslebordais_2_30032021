@@ -594,7 +594,7 @@
 			   box-sizing: content-box;
 			   
 			   margin-left:-2em;
-			   width:80%;
+			   width:70%;
 			   gap:2em;
 			   margin-bottom:8em;
 			   
@@ -1094,7 +1094,7 @@
 	   margin-right:0em;
 	   align-content: center;
 	   flex-direction: column;
-	   
+	   gap:3em;
 	   box-sizing: border-box;
 	   
    }
