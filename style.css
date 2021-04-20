@@ -778,6 +778,8 @@
 		   margin-bottom: 1.325em;
 		   box-sizing: border-box;
 		   width:100%;
+		   
+
 				   
 	   }
    
@@ -789,7 +791,7 @@
 		   border-radius:1.25em;
 		   flex-direction: column;
 		   background-color:#F2F2F2;
-		   gap:1.875em;
+		   gap:2em;
 		   width:67%;
 		   padding-right:1em;
 		   padding-left:1em;
@@ -834,7 +836,7 @@
 		   align-items: center;
 		   margin-right:2.5em;
 		   margin-left:2.5em;
-		   gap:1.9em;
+		   gap:2em;
 		   
    
 	   }
@@ -849,7 +851,7 @@
 		   align-items: center;
 		   margin-right:2.5em;
 		   margin-left:2.5em;
-		   gap:1.9em;
+		   gap:2em;
 		   
 		   
 	   }
@@ -1066,9 +1068,11 @@
    
 	   
 	   display:flex;
-	   justify-content: flex-start;
+	   
+	   box-sizing: border-box;
+	   height:50%;
 	   align-items: flex-end;
-	   margin-top: 3.125em;
+	   padding-bottom: 0.5em;
 	   color:#0065FC;
 	   
 	   
@@ -1090,7 +1094,7 @@
 	   margin-right:0em;
 	   align-content: center;
 	   flex-direction: column;
-	   gap:2em;
+	   
 	   box-sizing: border-box;
 	   
    }
@@ -1099,6 +1103,7 @@
 	   box-sizing:border-box;
 	   width:100%;
 	   align-items: center;
+	   
 	   
    }
    
@@ -1111,6 +1116,7 @@
 	   justify-content: space-between;
 	   flex-wrap:wrap;
 	   width:100%;
+	   
 	   background-color: #DEEBFF;
    }
    
@@ -1162,14 +1168,14 @@
 		   margin-top: 3em;
 		   display:flex;
 		   flex-direction:column;
-		   gap:2em;
+		   gap:0;
 	   }
    
 	   body div .box1 {
 		   order:2;
 		   display:flex;
 		   flex-direction: column;
-		   width:auto;
+		   width:100%;
 		   background:none;
 	   }
    
@@ -1250,8 +1256,8 @@
    
 		   border-radius:0em;
 		   width:auto;
-		   margin-left:0.8em;
-		   margin-right:0.8em;
+		   margin-left:0.4em;
+		   margin-right:0.4em;
 		   gap:0em;
 		   margin-bottom:0em;
 		   
@@ -1560,12 +1566,12 @@
 	   }
    
 	   body div .actbox {
-   
+		box-sizing:border-box;
 		   flex-direction:column;
-		   
-		   margin-left:0em;
-		   margin-right:0em;
-		   gap:1em;
+		   padding-left:0.4em;
+		   padding-right:0.4em;
+		  
+		   gap:2em;
 	   }
    
 	   body div .act1{
@@ -1575,7 +1581,7 @@
 		   box-sizing: content-box;
 		   width:100%;
 		   
-		   gap:0em;
+		   gap:2em;
 		   height:18em;
 		   
 		   
@@ -1630,7 +1636,7 @@
 		   box-sizing: content-box;
 		   width:100%;
 		   
-		   gap:0em;
+		   gap:2em;
 		   height:37em;
 		   
 		   
@@ -1658,7 +1664,7 @@
 		   
 		   box-sizing: border-box;
 		   width:100%;
-		   
+		   gap:2em;
 		   height:18em;
    
 	   }
@@ -1669,7 +1675,7 @@
 		   box-sizing: content-box;
 		   width:100%;
 		   
-		   gap:0em;
+		   gap:2em;
 		   height:37em;
 		   
 		   
