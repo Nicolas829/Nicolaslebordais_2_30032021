@@ -392,7 +392,7 @@ input {
 	border:none;
 	border-top: solid#F2F2F2 0.07em;
 	border-bottom:solid #F2F2F2 0.07em;
-	
+	outline:none;
 			
 }
 
@@ -433,6 +433,80 @@ div  .rechercher {
 	font-weight: bold;
 }
 
+/*****ajustement pour tablette *****/
+
+@media screen  and (max-width:1200px) {
+
+
+	#ville::placeholder {
+
+	
+		font-size:1em;
+	}
+	div .search {
+
+		margin-top:3em;
+		display: flex;
+		justify-content: flex-start;
+		box-sizing: border-box;
+		width:40%;
+		margin-left:1em;
+		margin-right:1em;
+		gap:0;
+		
+		
+	}
+	
+	div .rechercher {
+		box-sizing: border-box;
+		width:15%;
+		border-radius:1.25em;
+	}
+	div .input {
+		box-sizing: border-box;
+		width:72%;
+		
+	}
+	
+	input {
+		
+		box-sizing: border-box;
+		height:100%;
+		width:100%;
+		border-top: solid #F2F2F2 0.07em;
+		border-bottom:solid #F2F2F2 0.07em;
+		
+		
+	}
+	
+	.rechercher {
+	
+		margin-left:-0.5em;
+		font-size:
+	}
+	
+	.rechercher p {
+		font-size: 0em;
+	}
+	
+	
+	#icone_search {
+		font-size: 1em;
+	}
+	.rechercher p i{
+		display:flex;
+		justify-content: center;
+		align-items:center;
+		text-align:center;
+		font-size:1em;
+		
+	}
+	
+	
+	
+}
+
+
 /*ajustement de la barre de recherche pour smartphone*/
 
 @media only screen and (max-width: 480px) {
@@ -459,6 +533,7 @@ div .rechercher {
 div .input {
 	box-sizing: border-box;
 	width:72%;
+	
 }
 
 input {
@@ -468,7 +543,7 @@ input {
 	width:100%;
 	border-top: solid #F2F2F2 0.07em;
 	border-bottom:solid #F2F2F2 0.07em;
-	outline: none;
+	
 	
 }
 
