@@ -1125,7 +1125,7 @@ body div .fleches {
 	
 body div .box1 {
 	order:1;
-	width:80%;		
+	width:100%;		
 	align-self:center;
 	margin:0;
 	padding:0;
@@ -1149,6 +1149,7 @@ body div .resp1, body div .resp2 {
 body div .pict1 {
 
 	box-sizing: border-box;
+	width:80%;
 	height:20em;
 	
 }
@@ -1175,7 +1176,8 @@ font-size:1.3em;
 	
 
 	body div.textresult {
-
+		
+		
 		margin-left:0.5em;
 		margin-top:2em;
 	}
@@ -1517,7 +1519,7 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 @media screen and (max-width:480px) {
 
 	body .acttext {
-
+		
 		margin-left:0.5em;
 	}
 
