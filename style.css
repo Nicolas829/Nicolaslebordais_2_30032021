@@ -1,8 +1,3 @@
-
-
-
-/* Les couleurs de la charte sont le bleu #0065FC, 
-et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
 body, html {
 
 	margin:0;
@@ -39,7 +34,7 @@ a {
 	color:black;
 }
 
-div a p {
+div a  p {
 	color:white;
 }
 
@@ -50,7 +45,7 @@ div .rechercher a i {
 footer
 {
 	margin:0;
-	margin-top:2em;
+	margin-top:7em;
 	width:100%;	
 	
 }
@@ -118,7 +113,7 @@ footer
 
 	.page_principale {
 		margin:0;
-		font-size:1.2em;
+		font-size:1em;
 		padding-left:0;
 		padding-right: 0;		
 	
@@ -153,7 +148,8 @@ header div .menu_logo {
 header div .liste {
 	display:flex;
 	justify-content:space-between;
-	
+	font-weight:bold;
+	font-size:1.2em;
 	gap:2em;
 	
 		}
@@ -184,7 +180,8 @@ header div .li3 a {
 
 
 header div a {
-	font-size:1.1em;
+	font-size:1.2em;
+	font-weight: bold;
 	text-decoration: none;
 	color:black;
 	
@@ -193,8 +190,8 @@ header div a {
 @media screen and (min-width: 900px) {
 header div .li1 :hover,.li2 :hover {
 	color:#0065FC;
-	padding-top:3.8em;
-	border-top:solid 0.125em;
+	padding-top:2.75em;
+	border-top:solid 3px;
 
 }
 }
@@ -280,32 +277,21 @@ header div .li1 :hover,.li2 :hover {
 /*fin ajustement portable entete et liste*/
 
 
-	h1 {
-	margin-top:0px;
-	font-size:1.81em;
 	
 	
-	}
-
-	h2 {
-	font-size:1.31em;
-	text-decoration: none;
-	font-weight:lighter;	
-	}
 
 @media screen and (max-width:480px) {
 
 	h1 {
 
 		margin-top:4em;
-		margin-left:0.5em;
+		margin-left:0.5em;		
+		width:80%;
 	
 	}
 
-	h2 {
-		font-size:1.31em;
-		text-decoration: none;
-		font-weight:lighter;
+	h2 {		
+		
 		margin-left:0.7em;
 	}
 }
@@ -320,7 +306,7 @@ header div .li1 :hover,.li2 :hover {
 	display:flex;
 	justify-content: flex-start;
 	width:41.5em;
-	height: 3em;
+	height: 4em;
 	gap:0em;	
 	
 }
@@ -520,13 +506,14 @@ header div.theme {
 	justify-content: space-between;
 	align-items:center;	
 	width:78.125em;	
-	height:2.8em;	
+	height:3.8em;	
 	
 }
 
 header div.element1 {
 	
 		font-size:1.4em;
+		font-weight: bold;
 }
 
 header div.element2,.element3,.element4,.element5 {
@@ -537,11 +524,11 @@ header div.element2,.element3,.element4,.element5 {
 	align-items:center;
 	border:solid;
 	width:auto;
-	padding-right:2em;
-	gap:1.25em;
+	padding-right:1em;
+	gap:0.75em;
 	box-sizing:content-box;
 	height:100%;
-	border-radius:1.56em;
+	border-radius:2em;
 	border-color: #F2F2F2;
 	cursor:pointer;
 	
@@ -553,8 +540,8 @@ header div .icons {
 	border-radius:100%;
 	background-color: #DEEBFF;
 	color:#0065FC;
-	width:3.2em;	
-	height:3.2em;
+	width:4em;	
+	height:4em;
 	margin-left:-0.22em;
 	text-align:center;	
 	vertical-align: bottom;	
@@ -595,10 +582,10 @@ header div .icons {
 			flex-direction: row;
 			flex-wrap: wrap;
 			box-sizing: content-box;			
-			margin-left:-2em;
-			width:80%;
+			width:60%;
+			height:100%;
 			gap:2em;
-			margin-bottom:8em;
+			margin-bottom:auto;
 			
 		}
 
@@ -640,27 +627,12 @@ header div .icons {
 			
 	}
 
-		header div .element3 {
+		h
 
-			width:auto;			
-			text-align:center;
-		}
-
-	header div.element2,.element3,.element4,.element5 {
-
-	display:flex;
-	justify-content:flex-start;
-	align-items:center;
-	border:solid;
-	width:auto;
-	padding-right:0.5em;
+	header div.element2,.element3,.element4,.element5 {		
 	
+	padding-right:0.5em;	
 	gap:0.5em;
-	box-sizing:content-box;
-	height:100%;
-	border-radius:1.56em;
-	border-color: #F2F2F2;
-	cursor:pointer;
 		
 			
 	}
@@ -754,7 +726,7 @@ header div .iconsinfo {
 
 /*********************************** partie sur box résultat et images ******************/
 
-	body div .marseille {
+		body div .marseille {
 		
 		margin-top: 3em;
 		display:flex;
@@ -789,7 +761,7 @@ header div .iconsinfo {
 		margin-left:1.7185em;		
 		font-size:1.6875em;
 		font-weight: bold;		
-		box-sizing: border-box;
+		box-sizing: border-box;		
 		height:6%;
 		
 	}
@@ -940,11 +912,11 @@ body div .box2text {
 }
 
  body div .fleche {
-
 	
 	font-size:1em;
  }
 
+ 
  body div .pict2 {
 
 	margin-top:1.25em;
@@ -1069,6 +1041,7 @@ body div .marseille {
 }
 
 body div .box1 {
+	order:1;
 	box-sizing:border-box;
 	width:100%;
 	height:100%;
@@ -1079,24 +1052,26 @@ body div .box1 {
 	
 }
 
+body div .textresult, .plus {
 
+	align-self: start;
+}
 
 
 
 body div .box2 {
+	order:0;
 	box-sizing: border-box;
 	flex-direction: row;
 	height:auto;
-	
-	display: flex;
 	justify-content: space-between;
 	flex-wrap:wrap;
 	width:100%;
-	background-color: #DEEBFF;
+	
 }
 
 body div .box2text {
-
+	
 	box-sizing: content-box;
 	margin-top:3em;
 	flex-direction: row;
@@ -1142,6 +1117,7 @@ body div .fleches {
 		margin:0;
 		display:flex;
 		flex-direction:column;
+		box-sizing: border-box;
 		gap:2em;
 		
 	}
@@ -1149,7 +1125,8 @@ body div .fleches {
 	
 body div .box1 {
 	order:1;
-	width:100%;
+	width:80%;		
+	align-self:center;
 	margin:0;
 	padding:0;
 	background-color: white;
@@ -1180,18 +1157,18 @@ body div .pict1 {
 body div .hoteltext {
 
 	font-weight:bold;
-	margin-bottom:0;
+	
 	margin-left: 1.05em;
-	font-size:1.1875em;
+	font-size:1.4em;
 	
 }
 
 
 body div .pricetext {
 
-margin-top:0;
+
 margin-left: 1.25em;
-font-size:1em;
+font-size:1.3em;
 }
 
 
@@ -1207,9 +1184,6 @@ font-size:1em;
 		margin-left:0.5em;
 		
 	}
-
-	
-
 	
 	body div .aminaphoto {
 
@@ -1218,16 +1192,6 @@ font-size:1em;
 		width:100%;		
 		object-fit: cover;	
 
-	}
-
-	body div .hoteltext {
-		margin-top:1.5em;
-	
-		
-	}
-
-	body div .pricetext {
-		margin-top:1.5em;
 	}
 
 	body div .stars {
@@ -1239,8 +1203,7 @@ font-size:1em;
 		margin-top:2em;
 		border-radius:0em;
 		width:auto;
-		margin-left:0.8em;
-		margin-right:0.8em;
+		
 		gap:0em;
 		margin-bottom:0em;		
 		
@@ -1248,10 +1211,23 @@ font-size:1em;
 	
 	body div .pict2 {
 
+		width:90%;
+		align-self: center;
 		margin-left:0.5em;	
 		margin-right:0.5em;			
 		margin-bottom:1em;
 		
+	}
+
+	body div .hoteltextbox2 {
+		font-size:1.4em;
+	}
+	body div .pricetextbox2 {
+		font-size:1.3em;
+	}
+	body div .textpict2 {
+		width:80%;
+
 	}
 	
 
@@ -1382,8 +1358,10 @@ body div .act3 {
 
 body div .act1lib {
 
-	margin-top:0.93em;
+	margin-top:0.63em;
 	margin-left:1.25em;
+	font-weight: bold;
+	font-size:1.2em;
 	
 
 }
@@ -1485,7 +1463,8 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 		margin-top:2em;
 		margin-bottom:2em;		
 		display: flex;
-		justify-content:  center;
+		justify-content:  start;
+		
 	}
 
 	div .actbox {
@@ -1545,25 +1524,29 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 	body div .actbox {
 
 		flex-direction:column;		
+		gap:3em;
+		height:auto;
 		margin-left:0em;
 		margin-right:0em;
-		gap:1em;
+		box-sizing: border-box;
+			
+		
 	}
 
 	body div .act1{
 
 		box-sizing: content-box;
-		width:100%;		
-		gap:0em;
+		width:80%;		
+		align-self:center;		
+		
 		height:18em;			
 		
 	}
 	body div .act1lib {
 
-		margin-top:1.5em;
+		margin-top:1em;
 		margin-left:2em;
-		font-weight:bold;
-		
+		font-weight:bold;		
 	
 	}
 
@@ -1603,9 +1586,10 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 	body div .act2{
 
 		box-sizing: content-box;
-		width:100%;		
-		gap:0em;
-		height:37em;		
+		width:80%;		
+		align-self:center;		
+		gap:3em;
+		height:auto;		
 		
 	}
 
@@ -1627,16 +1611,18 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 	body div .act3 {
 		
 		box-sizing: border-box;
-		width:100%;		
+		width:80%;		
+		align-self:center;	
 		height:18em;
 
 	}
 	body div .act4{
 		
 		box-sizing: content-box;
-		width:100%;		
-		gap:0em;
-		height:37em;
+		width:80%;		
+		align-self:center;	
+		gap:3em;
+		height:auto;
 		
 		
 		
@@ -1671,7 +1657,7 @@ footer div .cadre {
 	display:flex;
 	justify-content: flex-start;
 	width:auto;
-	height:12.5em;	
+	height:18.5em;	
 	background-color: #F2F2F2;
 }
 
@@ -1679,6 +1665,7 @@ footer ul  {
 	line-height:1.875em;
 	list-style-type: none;
 	text-decoration: none;
+	margin-top: 3em;
 	font-size:1em;
 }
 
@@ -1707,12 +1694,20 @@ footer .titresfooter {
 
 @media screen and (max-width:480px) {
 
-	body div .cadre {
+	footer div .cadre {
 		
 		display: flex;
 		flex-direction: column;
 		height:auto;		
 		
 	}
+
+	footer div li a, li.titresfooter {
+
+		font-size:1.2em;
+	}
+	
+
+	
 	
 }
