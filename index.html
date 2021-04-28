@@ -14,51 +14,52 @@
 	<div class="page_principale">
 		<header>
 			<div id="part1">
+				<!--- logo + element de navigation-->
 			<div class="menu_logo">
 				<div class="item">  			
 				<img src="images/logo/logo.png" class="logo" alt="image_logo_reservia">
    				</div>
 
-   				<div class="liste">	
+   				<nav class="liste">	
    			
-					<div class="li1_li2_480px">
-						<div class="li1"> <a href="#marseille" >Hébergements </a></div>
-   						<div class="li2"> <a href="#activités" >Activités </a></div>
-					</div>
+					<ul class="li1_li2">
+						<li class="li1"> <a href="#marseille" >Hébergements </a></li>
+   						<li class="li2"> <a href="#activités" >Activités </a></li>
+					</ul>
 						<div class="li3"> <a href="" >S'inscrire</a> </div>
    				
-   				</div>
+				</nav>
    			</div>
 		</div>
 
 		<div id="part2">
+			<!--- titre et barre de recherche-->
    			<h1>
 			Trouvez votre hébergement pour des vacances de rêve	
 			</h1>
 			<h2>
 			En plein centre ville ou en pleine nature
 			</h2>
-			<div class="search">
+			<form class="search">
 		  		<div class="map">
 			  		<div class="mapsearch">
 		    		<i class="fas fa-map-marker-alt" ></i>
 			  		</div>
 		 		</div>
-		   		<div class="input">
+		   		<div class="champ_ville">
 		    		<input type="text" id="ville" name="ville" class="champ" placeholder="     Marseille, France">
    				</div>
    				<div class="rechercher"><a href="" >
    					<p>Rechercher</p></a>
-					
-					   <a href="" ><i id="icone_search" class="fas fa-search"></i> </a>
+					<a href="" ><i id="icone_search" class="fas fa-search"></i> </a>
 		   
-   			</div>
-		</div>
+				   </div>
+				</form>
 	
 
 	
-		<div id="theme" class="theme">
-
+		<div id="part3" class="theme">
+			<!--- filtres par thèmes-->
 			<div class="element1">Filtres</div>
 				
 			<div class="element2">
@@ -102,8 +103,8 @@
 			
 		</div>
 
-		<div id="info" class="info">
-
+		<div id="part4" class="info">
+			<!--- informations sur nombre de logements-->
 			<div class="iconsinfo">
 				<i class="fas fa-info"></i>
 			</div>
@@ -116,8 +117,10 @@
 	</div>
 
 </header>
-	<div class="resultat">
-		<div id="marseille" class="marseille">
+<!--- partie Résulat de recherche-->
+	<div class="main_container">
+		<!--- container principal divisé en 2 box ; box1 = hebergement box2= populaires---->
+		<div id="marseille" class="container_marseille">
 			<div id="box1" class="box1">
 				<div class="textresult">Hébergements à Marseille</div>
 				<div class="resp1" id="response">
@@ -327,11 +330,12 @@
 			</div>
 		</div>
 	</div>
-	<br>
+	
+	<!--- container sur activités---->
 	<div class="acttext" id="activités">
 		Activités à Marseille
 	</div><br>
-	<div class="activites" >
+	<div class="container_activites" >
 		<div class="actbox">
 			<div class="act1"><a href="" >
 				<div class="act1pict1">
