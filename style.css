@@ -1,35 +1,27 @@
 body, html {
-
+	font-family: 'Raleway', sans-serif;
 	margin:0;
-	padding:0;
-	
+	padding:0;	
 }
-
-
 
 body, header{
 	font-family: 'Raleway', sans-serif;
-	text-decoration: none;	
-	
+	text-decoration: none;		
 }
 
 body {	
 	margin:0;
 	margin-left:auto;
 	margin-right: auto;
-		
-}
 
+	}
 
-.page_principale {
-	
+.page_principale {	
 	padding-left:25px;
-	padding-right: 25px;
-	
+	padding-right: 25px;	
 }
 
 a {
-
 	text-decoration: none;
 	color:black;
 }
@@ -71,39 +63,20 @@ header div a {
 		font-size:0.7em;
 	}
 }
-
-@media screen and (max-width:1200px) {
-
-	.page_principale {
-
-		font-size:0.9em;
-	}
+@media screen and (max-width: 1200px) {
+.page_principale {
+    font-size: 0.9em;
 }
-
-@media screen and (max-width: 1450px) {
+}
+@media screen and (min-width:541px) and (max-width:820px) {
 
 	body {
-
-		font-size:0.7em;
-		
-	}
-}
-
-
-
-@media screen and (min-width:481px) and (max-width:820px) {
-
-	body {
-		font-size:0.7em;	
-		
-		
+		font-size:0.7em;			
 	}
 
-	.page_principale {
-			
+	.page_principale {			
 		padding-left:10px;
-		padding-right:10px;		
-	
+		padding-right:10px;			
 	}
 	
 }
@@ -120,7 +93,7 @@ header div a {
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media  screen and (max-width: 540px) {
 
 	.page_principale {
 		
@@ -134,10 +107,7 @@ header div a {
 	}
 	
 }
-
-
 /****************logo + element de navigation****************/
-
  div.menu_logo {
 	margin-top:3.12em;
 	display:flex;
@@ -146,12 +116,8 @@ header div a {
 	margin-bottom:2em;
 	
 }
-
-
- header div .logo {
- 	
+ header div .logo { 	
 	width:8.25em;
-	
 	
 }
 nav.liste {
@@ -161,8 +127,7 @@ nav.liste {
 	font-weight:bold;
 	font-size:1.2em;
 	gap:2em;
-	
-		}
+			}
 
 nav ul.li1_li2 {
 
@@ -188,9 +153,6 @@ header nav .li3 a {
 	color:#0065FC;
 }
 
-
-
-
 @media screen and (min-width: 900px) {
 header div .li1 :hover,.li2 :hover {
 	color:#0065FC;
@@ -202,23 +164,18 @@ header div .li1 :hover,.li2 :hover {
 
 /****ajustement tablette ***/
 
-@media screen and (min-width:481px) and (max-width:820px) {
+@media screen and (min-width:541px) and (max-width:820px) {
 	header nav.liste {
-
 		font-size:1.3em;
 		margin-right:1em;
 	}
 	
 }
-
 /*************responsive smartphone**********************/
 
-@media only screen and (max-width: 480px) {
-	
+@media  screen and (max-width: 540px) {
 
-
-	nav.liste {
-	
+	nav.liste {	
 		display:flex;
 		justify-content: flex-end;		
 		box-sizing:content-box;
@@ -231,8 +188,7 @@ header div .li1 :hover,.li2 :hover {
 		margin-top:7em;		
 		gap:2em;		
 		
-	}	
-		
+	}			
 	
 	nav ul.li1_li2 {		
 		order:1;
@@ -254,23 +210,18 @@ header div .li1 :hover,.li2 :hover {
 		margin-right:3em;
 	}
 	
-
-	
-	header div .li1:active, .li2:active {
+	header div .li2:active, .li1 {
 		border-bottom:solid #0065FC;
 		border-top:none;
 		color: #0065FC;
 	
 	}
 
-	header div a:active{
+	header div .li1 a{
 
 		color:#0065FC;
 	}
-
 }
-
-
 /***********titres*******************/
 
 h2 {
@@ -278,7 +229,7 @@ h2 {
 }
 
 	
-@media screen and (min-width:481px) and (max-width:820px) {
+@media screen and (min-width:541px) and (max-width:820px) {
 	h1 {
 		margin-top:2em;
 		font-size:2.3em;
@@ -293,8 +244,7 @@ h2 {
 
 }
 
-@media screen and (max-width:480px) {
-
+@media screen and (max-width:540px) {
 	h1 {
 
 		margin-top:6em;
@@ -308,8 +258,6 @@ h2 {
 		margin-left:0.7em;
 	}
 }
-
-
 
 /*************** barre de recherche******************/
 
@@ -383,9 +331,7 @@ div  .rechercher {
 
 /*****ajustement pour tablette *****/
 
-@media screen  and (max-width:1200px) {
-
-
+@media screen  and (min-width:541px) and (max-width:820px) {
 	div .search {
 
 		margin-top:3em;
@@ -448,7 +394,7 @@ div  .rechercher {
 
 /*ajustement de la barre de recherche pour smartphone*/
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
 
 body div  .map {
 	width:15%;
@@ -583,9 +529,9 @@ header div .icons {
 
 /**************ajustement ecran tablette ***************************/
 
-@media screen and (min-width:481px) and (max-width:820px) {
+@media screen and (min-width:541px) and (max-width:820px) {
 
-		body div .theme {
+		body div.theme {
 			font-size:1.3em;
 			display: flex;
 			justify-content: flex-start;
@@ -619,9 +565,9 @@ header div .icons {
 	
 /*ajustement des thèmes pour smartphone */
 
-	@media only screen and (max-width: 480px) {
+	@media screen and (max-width: 540px) {
 
-	header	 div .theme {
+	header	 div.theme {
 			display:flex;
 			justify-content:flex-start ;
 			margin-left:1em;
@@ -682,23 +628,21 @@ header div .iconsinfo {
 		
 	}
 /*****************ajustement partie informations pour tablette***************/
-@media screen and (min-width:481px) and (max-width:820px) {
+@media screen and (min-width:541px) and (max-width:820px) {
 
 	header .info {
 		font-size:1.3em;
 	}
 }
 /*****************ajustement partie informations pour smartphone***************/
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
 
 	header .info {
-
 		margin-top: 3em;
 		display:flex;
 		justify-content: flex-start;
 		margin-left:1em;		
-		width:80%;
-		
+		width:80%;		
 	}
 
 
@@ -753,20 +697,13 @@ header div .iconsinfo {
 		padding-left:1em;
 		padding-bottom:2em;
 		
-	}
-	
+	}	
 
-	body div .box2text,.textresult {
-		
-		display: flex;
-		align-items: center;
+	h3, h4{
 		margin-top:1.18em;
-		margin-left:1.7185em;		
+		margin-left:1.7185em;
 		font-size:2em;
-		font-weight: bold;		
-		box-sizing: border-box;		
-		height:6%;
-		
+		height:2%;
 	}
 	
 
@@ -899,29 +836,27 @@ body div .box2 {
 	box-sizing: border-box;
 	width:30%;
 	background-color: #F2F2F2;
-	border-radius:1.25em ;
-	
+	border-radius:1.25em ;	
 	
  }
 
-
+ div .fleche {
+ display: flex;
+		
+		margin-top:1.18em;
+		margin-left:1.7185em;		
+		font-size:2em;						
+		height:6%;
+ }
 body div .box2text {
 
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-between;	
 	margin-bottom:0.45em;	
 	margin-right:2.3em;
-	
 }
-
- body div .fleche {
-	
-	font-size:1em;
- }
-
  
  body div .pict2 {
-
 	margin-top:1.25em;
 	display:flex;	
 	flex-direction: row;
@@ -963,9 +898,6 @@ body div .photopict2 {
 	object-fit: cover;	
 		  
 }
-
-
-
 body div .hoteltextbox2 {
 
 	font-weight:bold;
@@ -974,8 +906,6 @@ body div .hoteltextbox2 {
 	margin-bottom:0.26em;
 
 }
-
-
 body div .pricetextbox2 {
 
 	display:flex;
@@ -992,9 +922,7 @@ font-size:1em;
 	margin-right:2.5em;
 	width: 11.25em;
 	height:10em;
-	overflow:hidden;
-	
-	
+	overflow:hidden;	
 }
 
  body div .stars  {
@@ -1019,21 +947,21 @@ body div .starspict2  {
 	display:flex;
 	box-sizing: border-box;
 	height:50%;
-	align-items: flex-end;
+	align-items: flex-end;	
 	padding-bottom: 0.5em;
 	color:#0065FC;
-	
 	
 }
 
 body div .greystarspict2 {
 
+	
 	color:#F2F2F2;
 }
 
 /*************ajustement ecran tablette******************/
 
-@media screen and (min-width:481px) and (max-width:820px) {
+@media screen and (min-width:541px) and (max-width:820px) {
 
 body div .container_marseille {
 
@@ -1082,69 +1010,55 @@ body div .box2 {
 body div .box2text {
 	
 	box-sizing: content-box;	
-	width:90%;
-	flex-direction: row;
+	width:90%;	
 	justify-content: space-between;		
+	align-items: center;
 	margin-left: 0;
 	margin-right: 0;
 	
+}
+h4 {
+	margin-left:0;
 	
 }
-div.fleche {
-	display: flex;
-	align-content:flex-end;
-}
-
-
+	body div.fleche {				
+		margin-top:0;
+	}
+	
 
 body div .pict2 {
 	
 	width:90%;		
 }
-body div .fleches {
-	
-	margin-top:2em;
-}
+
 div.textpict2 {
-	box-sizing:border-box;
-	
+	box-sizing:border-box;	
 	width: 100%;
 	height:8em;
-	font-size:1.2em;
-	
+	font-size:1.2em;	
 	margin-top:0;
 }
 
 body div .box1 {
-
 	padding:0;
 }
 body div .stars {
 	margin-top: 0.9em;
 }
+
+
 }
-
-
-
-
 
 /******************partie smartphone box résultat et populaires********************/
 
-
-
-
-@media screen and (max-width:480px) {
-
-	body div .container_marseille {
-	
+@media screen and (max-width:540px) {
+	body div .container_marseille {	
 		margin:0;
 		display:flex;
 		flex-direction:column;
 		box-sizing: border-box;
-		gap:2em;
-		
+		gap:2em;		
 	}
-
 	
 body div .box1 {
 	order:1;
@@ -1152,13 +1066,9 @@ body div .box1 {
 	align-self:center;
 	margin:0;
 	padding:0;
-	background-color: white;
-	
-}
-	
-
-body div .resp1, body div .resp2 {
-	
+	background-color: white;	
+}	
+body div .resp1, body div .resp2 {	
 	
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1166,57 +1076,19 @@ body div .resp1, body div .resp2 {
 	width:100%;
 	margin:0;
 	padding:0; 
-
 }
 
 body div .pict1 {
-
 	box-sizing: border-box;
 	width:80%;
-	height:20em;
-	
+	height:20em;	
 }
-
-
-body div .hoteltext {
-
-	font-weight:bold;
-	
-	margin-left: 1.05em;
-	font-size:1.4em;
-	
-}
-
-
-body div .pricetext {
-
-
-margin-left: 1.25em;
-font-size:1.3em;
-}
-
-
-	
-
-	body div.textresult {
-		
-		
-		margin-left:0.5em;
-		margin-top:2em;
-	}
-	body div .plus {
-		
-		margin-left:0.5em;
-		
-	}
-	
+			
 	body div .aminaphoto {
-
 		box-sizing:border-box;
 		border-radius:1.25em 1.25em 0 0;		
 		width:100%;		
 		object-fit: cover;	
-
 	}
 
 	body div .stars {
@@ -1224,24 +1096,19 @@ font-size:1.3em;
 	}
 
 	body div .box2 {
-
 		margin-top:2em;
 		border-radius:0em;
-		width:auto;
-		
+		width:auto;		
 		gap:0em;
-		margin-bottom:0em;		
-		
+		margin-bottom:0em;				
 	}
 	
 	body div .pict2 {
-
 		width:90%;
 		align-self: center;
 		margin-left:0.5em;	
 		margin-right:0.5em;			
-		margin-bottom:1em;
-		
+		margin-bottom:1em;		
 	}
 
 	body div .hoteltextbox2 {
@@ -1252,42 +1119,23 @@ font-size:1.3em;
 	}
 	body div .textpict2 {
 		width:80%;
-
-	}
+	}	
 	
-
-	body div .box2text {		
-		
-		margin-left:0.5em;
-		margin-right:0em;
-	}
-	body div .fleche {
-
-		margin-right:0.5em;
-	}
+	
 
 }
 
 
 /***************fin partie ajustement smartphone pour résulat et populaires ****/
 
-	
-
-body div .actbox {
-	
-	
+body div .actbox {		
 	width:100%;
 	height:auto;
 	display:flex;
 	justify-content: space-between;	
-	margin-top:2em;
-	
+	margin-top:2em;	
 }
-
-
-
 body div .act1 {
-
 	display:flex;
 	flex-direction: column;
 	width: 24%;
@@ -1297,9 +1145,7 @@ body div .act1 {
 	cursor: pointer;
 }
 
-
 body div .act1pict1 {
-
 	height:30.125em;
 	overflow: hidden;
 	border-radius:1.25em 1.25em 0 0;
@@ -1307,21 +1153,17 @@ body div .act1pict1 {
 }
 
 body div .vieuxport {
-
 	object-fit: cover;
 	height:30.125em;
 	border-radius:1.25em 1.25em 0 0;
 }
 
-
 body div .act2 {
-
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 24%;
-	height: 33.25em;
-	
+	height: 33.25em;	
 }
 
 body div .act2sup {
@@ -1333,7 +1175,6 @@ body div .act2sup {
 }
 
 body div .act2inf {
-
 	width:100%;
 	height:12.25em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
@@ -1341,30 +1182,23 @@ body div .act2inf {
 }
 
 body div .act2pict1 {
-
 	height:15.375em;
 	overflow: hidden;
 	cursor: pointer;
 }
-
-
 body div .pomegues {
-
 	object-fit:cover;
 	width:100%;
 	height:120%;
 	border-radius:1.25em 1.25em 0 0;
 }
 body div .act2pict2 {
-
 	height:9.125em;
 	overflow: hidden;
 	border-radius:1.25em 1.25em 0 0;
 	cursor: pointer;
 }
-
 body div .frioul {
-
 	width:100%;
 	height:120%;
 	object-fit: cover;
@@ -1372,7 +1206,6 @@ body div .frioul {
 }
 
 body div .act3 {
-
 	display:flex;
 	flex-direction: column;
 	width: 24%;
@@ -1383,53 +1216,41 @@ body div .act3 {
 }
 
 body div .act1lib {
-
 	margin-top:0.63em;
 	margin-left:1.25em;
 	font-weight: bold;
 	font-size:1.2em;
-	
-
 }
 body div .act3pict1 {
-
 	height:30.125em;
 	overflow: hidden;
-	border-radius:1.25em 1.25em 0 0;
-	
+	border-radius:1.25em 1.25em 0 0;	
 }
 
 body div .calanques {
-
 	object-fit: cover;
 	height:30.125em;
-	border-radius:1.25em 1.25em 0 0;
-		
+	border-radius:1.25em 1.25em 0 0;		
 }
 
 body div .act4 {
-
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 24%;
-	height: 33.25em;
-	
+	height: 33.25em;	
 }
 
 body div .act4sup {
-
 	width:100%;
 	height:14.75em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
 	border-radius:1.25em;
 	overflow: hidden;
 	cursor: pointer;
-
 }
 
 body div .act4inf {
-
 	width:100%;
 	height:15.375em;
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
@@ -1437,15 +1258,12 @@ body div .act4inf {
 	overflow: hidden;
 	cursor: pointer;
 }
-
 body div .act4pict1 {
-
 	height:11.62em;
 	overflow: hidden;
 }
 
 body div .notredame {
-
 	width: 100%;
 	height:120%;
 	object-fit: cover;
@@ -1453,26 +1271,21 @@ body div .notredame {
 }
 
 body div .act4pict2 {
-
 	height:12.25em;
 	overflow: hidden;
 }
 
 body div .longchamp {
-
 	width:100%;
 	height:120%;
 	object-fit: cover;
 	border-radius:1.25em 1.25em 0 0;
 }
 
-
-body .acttext {
-	
+body .acttext {	
 	margin-top:2em;
 	font-size:2em;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
 body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.act4inf:hover {
 
@@ -1480,34 +1293,29 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 	transform:scale(1.04);
 }
 
-
 /************ajustement ecran tablette **************/
 
-@media screen and (min-width:481px) and (max-width:820px) {
+@media screen and (min-width:541px) and (max-width:820px) {
 
 	body .acttext {
 		margin-top:1em;
 		margin-bottom:1em;		
 		font-size:3em;
 		display: flex;
-		justify-content:flex-end;
+		justify-content:center;
 		box-sizing: border-box;
-		width:40%;		
-		
+		width:40%;			
 		
 	}
 
 	body div .act1lib {
 		font-size:1.4em;
 	}
-
 	div .actbox {
-
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		padding:0;
 		gap:3em;
-		
 		
 	}
 
@@ -1518,14 +1326,12 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 	}
 
 	div .act1 {
-		
-	order:4;
+			order:4;
 	flex:0.5 0 30%;
 		
 	}
 
-	div .act2 {
-		
+	div .act2 {		
 		box-sizing: border-box;
 		order:2;
 		flex:0.6 0 30%;
@@ -1544,151 +1350,113 @@ body div .act1:hover,.act2sup:hover,.act2inf:hover,.act3:hover,.act4sup:hover,.a
 
 }
 
-
-
 /****************ajustement activités smartphone************/
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:540px) {
 
-	body .acttext {
-		
+	body .acttext {		
 		margin-left:0.5em;
 	}
 
 	body div .actbox {
-
 		flex-direction:column;		
 		gap:3em;
 		height:auto;
 		margin-left:0em;
 		margin-right:0em;
-		box-sizing: border-box;
-			
-		
+		box-sizing: border-box;		
 	}
 
 	body div .act1{
-
 		box-sizing: content-box;
 		width:80%;		
-		align-self:center;		
-		
-		height:18em;			
-		
+		align-self:center;				
+		height:18em;					
 	}
 	body div .act1lib {
-
 		margin-top:1em;
 		margin-left:2em;
-		font-weight:bold;		
-	
+		font-weight:bold;			
 	}
 
 	body div .act1pict1 {
-
 		height:14em;
-	}
+		}
 
 	body div .act2pict1 {
-
 		height:14em;
 	}
 	body div .act2pict2 {
-
 		height:14em;
 	}
 	body div .act3pict1 {
-
 		height:14em;
 	}
 	body div .act4pict1 {
-
 		height:14em;
 	}
 	body div .act4pict2 {
-
 		height:14em;
 	}
-
-
 	body div .vieuxport {
 		box-sizing: border-box;
 		width:100%;
 		height:100%;
-	}
+		}
 
 	body div .act2{
-
 		box-sizing: content-box;
 		width:80%;		
 		align-self:center;		
 		gap:3em;
-		height:auto;		
-		
+		height:auto;			
 	}
 
-	body div .act2sup {
-		
+	body div .act2sup {		
 		box-sizing: border-box;
 		width:100%;		
 		height:18em;
-
 	}
 
-	body div .act2inf {
-		
+	body div .act2inf {		
 		box-sizing: border-box;
 		width:100%;		
 		height:18em;
-
 	}
-	body div .act3 {
-		
+	body div .act3 {		
 		box-sizing: border-box;
 		width:80%;		
 		align-self:center;	
 		height:18em;
-
 	}
-	body div .act4{
-		
+	body div .act4{		
 		box-sizing: content-box;
 		width:80%;		
 		align-self:center;	
 		gap:3em;
-		height:auto;
-		
-		
-		
+		height:auto;		
 	}	
 	
-	body div .act4inf {
-		
+	body div .act4inf {		
 		box-sizing: border-box;
-		width:100%;
-		
+		width:100%;		
 		height:18em;
 
-	}body div .act4sup {
-		
+	}body div .act4sup {		
 		box-sizing: border-box;
-		width:100%;
-		
+		width:100%;		
 		height:18em;
-
 	}
 
 	body div .act1:active,.act2sup:active,.act2inf:active,.act3:active,.act4sup:active,.act4inf:active {
 
-		box-shadow:0px 0px 10px 8px rgba(222,235,255,1) ;
-		
+		box-shadow:0px 0px 10px 8px rgba(222,235,255,1) ;		
 	}
 }
 
 /********fin ajustement section activité***************************/
 
-footer div .cadre {
-	
+footer div .cadre {	
 	display:flex;
 	justify-content: flex-start;
 	box-sizing: border-box;
@@ -1702,8 +1470,7 @@ footer ul  {
 	list-style-type: none;
 	text-decoration: none;
 	margin-left:4em;
-	margin-top: 3em;
-	
+	margin-top: 3em;	
 }
 
 footer div .pied1 {
@@ -1718,7 +1485,6 @@ footer div .pied3 {
 	width:31.25em;
 	
 }
-
 footer .titresfooter {
 
 	font-size:1.5em;
@@ -1729,26 +1495,17 @@ footer .titresfooter {
 footer li a {
 	font-size:1.4em;
 }
-
-
 /***********ajustement footer******************/
 
-@media screen and (max-width:480px) {
-
-	footer div .cadre {
-		
+@media screen and (max-width:540px) {
+	footer div .cadre {		
 		display: flex;
 		flex-direction: column;
-		height:auto;		
-		
+		height:auto;				
 	}
 
 	footer div li a, li.titresfooter {
 
 		font-size:1.2em;
-	}
-	
-
-	
-	
+	}	
 }
